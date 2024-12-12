@@ -24,3 +24,33 @@ body {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
 }
+
+/* .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100svh;
+    /* gap: 20rem; */
+.container-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-wrapper {
+    background-image: url(../img/background\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 50%;
+    height: 100svh;
+    border-radius: 0 50% 50% 50%;
+}
+
+.content-form {
+    position: absolute;
+    left: 60%;
+    font-size: 2rem;
+}
+
