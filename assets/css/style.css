@@ -17,6 +17,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    /* background-color: #ffffff; */
     background-color: var(--app-white-background-color);
 }
 
@@ -52,5 +53,76 @@ body {
     position: absolute;
     left: 60%;
     font-size: 2rem;
+    /* h1 {
+        /* margin: 10px 0px; */
+    
+    p {
+        font-size: 10px;
+    }
+
+    .msg {
+        font-size: 15px;
+        font-weight: 400;
+        color: #9d9b9b;
+        margin-bottom: 15px;
+        margin: 17px 0px;
+    }
 }
 
+.account-details {
+    display: grid;
+    gap: 30px;
+}
+
+.input-field {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 400;
+    input {
+        /* border: 2px solid #ccc; */
+        border-bottom: 2px solid #ccc;
+        /* border-left: 2px solid #ccc;  */
+        /* border-right: 2px solid #ccc;
+        /* border-top: 2px solid #ccc; */
+        border-radius: 8px;
+        padding: 8px 10px;
+        width: 70%;
+        font-size: 20px;
+    }
+}
+
+.login-msg {
+    input[type=checkbox] {
+        height: 17px;
+        accent-color: #3b53a0;   /*Using new-property to change the color*/
+    } 
+    a {
+        color: #3b53a0;
+    }
+}
+
+
+.login-btn {
+    background-color: #3b53a0; 
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+  
+.login-btn:hover {
+    background-color: #555d97; 
+    transform: scale(0.9);
+}
+  
+.fa-solid {
+    margin-right: 5px;
+}
