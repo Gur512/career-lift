@@ -18,7 +18,7 @@ window.onload = function() {
     passwordInput.value = '';
 }
 
-function validateForm(storedEmail, storedPassword) { 
+function validateForm(storedEmail, storedPassword, isChecked) { 
     const emailValue = emailInput.value; 
     const passwordValue = passwordInput.value; 
     const errors = { 
@@ -26,7 +26,9 @@ function validateForm(storedEmail, storedPassword) {
         password: '', 
         checkbox: '' 
     }; 
-
+    if(!isChecked) {
+        loginBtn.style.cursor = 'not-allowed';
+    }
     if (storedEmail !== emailValue) { 
         errors.email = 'Email is invalid'; 
     } 
@@ -40,7 +42,8 @@ function validateForm(storedEmail, storedPassword) {
     return !errors.email && !errors.password && !errors.checkbox; 
 }
 
-utils.listen('click', loginBtn, () => {
+utils.listen('click', loginBtn, (event) => {
+    event.preventDefault();
     const storedEmail = localStorage.getItem('email'); 
     const storedPassword = localStorage.getItem('password');
 
