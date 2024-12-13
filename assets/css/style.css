@@ -17,7 +17,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #ffffff; */
     background-color: var(--app-white-background-color);
 }
 
@@ -26,12 +25,6 @@ body {
     margin-inline: auto;
 }
 
-/* .main-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100svh;
-    /* gap: 20rem; */
 .container-main {
     display: flex;
     justify-content: space-between;
@@ -53,8 +46,6 @@ body {
     position: absolute;
     left: 60%;
     font-size: 2rem;
-    /* h1 {
-        /* margin: 10px 0px; */
     
     p {
         font-size: 10px;
@@ -83,8 +74,6 @@ body {
     input {
         /* border: 2px solid #ccc; */
         border-bottom: 2px solid #ccc;
-        /* border-left: 2px solid #ccc;  */
-        /* border-right: 2px solid #ccc;
         /* border-top: 2px solid #ccc; */
         border-radius: 8px;
         padding: 8px 10px;
@@ -96,7 +85,7 @@ body {
 .login-msg {
     input[type=checkbox] {
         height: 17px;
-        accent-color: #3b53a0;   /*Using new-property to change the color*/
+        accent-color: #3b53a0;   /* Using new-property to change the color */
     } 
     a {
         color: #3b53a0;
@@ -125,4 +114,23 @@ body {
   
 .fa-solid {
     margin-right: 5px;
+}
+
+.email-error {
+    color: #f00;
+    position: fixed;
+    bottom: 50%;
+}
+
+.password-error {
+    color: #f00;
+    position: fixed;
+    bottom: 33%;
+}
+
+.eye-toggle {
+    position: absolute;
+    bottom: 33%;
+    right: 30%;
+    cursor: pointer;
 }
