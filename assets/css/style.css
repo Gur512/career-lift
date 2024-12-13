@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+:root {
+    --app-dark-background-color: #1a1d28;
+    --app-white-background-color: #fff;
+    --app-simplegray-background-color: #2a2d38;
+    --app-lightgray-background-color:  #ccc;
+    --app-green-background-color:#28a745;
+    --app-light-background-color: #9d9798;
+} 
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--app-white-background-color);
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-wrapper {
+    background-image: url(../img/background\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 50%;
+    height: 100svh;
+    border-radius: 0 50% 50% 50%;
+}
+
+.content-form {
+    position: absolute;
+    left: 60%;
+    font-size: 2rem;
+    
+    p {
+        font-size: 10px;
+    }
+
+    .msg {
+        font-size: 15px;
+        font-weight: 400;
+        color: #9d9b9b;
+        margin-bottom: 15px;
+        margin: 17px 0px;
+    }
+}
+
+.account-details {
+    display: grid;
+    gap: 30px;
+}
+
+.input-field {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 400;
+    input {
+        /* border: 2px solid #ccc; */
+        border-bottom: 2px solid #ccc;
+        /* border-top: 2px solid #ccc; */
+        border-radius: 8px;
+        padding: 8px 10px;
+        width: 70%;
+        font-size: 20px;
+    }
+}
+
+.login-msg {
+    input[type=checkbox] {
+        height: 17px;
+        accent-color: #3b53a0;   /* Using new-property to change the color */
+    } 
+    a {
+        color: #3b53a0;
+    }
+}
+
+
+.login-btn {
+    background-color: #3b53a0; 
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+  
+.login-btn:hover {
+    background-color: #555d97; 
+    transform: scale(0.9);
+}
+  
+.fa-solid {
+    margin-right: 5px;
+}
+
+.email-error {
+    color: #f00;
+    position: fixed;
+    bottom: 50%;
+}
+
+.password-error {
+    color: #f00;
+    position: fixed;
+    bottom: 33%;
+}
+
+.eye-toggle {
+    position: absolute;
+    bottom: 33%;
+    right: 30%;
+    cursor: pointer;
+}
