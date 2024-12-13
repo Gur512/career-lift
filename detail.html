@@ -12,13 +12,90 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" >
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
-        <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <link rel="stylesheet" href="./assets/css/detail.css" media="all">
         <script src="./assets/js/script.js" type="module"></script>
     </head>
     <body>
-        <main>
+        <header>
             <div class="container">
-
+                <div class="title">
+                    <h1 class="company-name">Career <span class="logo">Lift</span></h1>
+                </div>
+                <div class="search-input">
+                    <input type="search" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <nav class="navbar">
+                    <li class="info">
+                        My Network
+                    </li>
+                    <li class="info">
+                        Jobs
+                    </li>
+                    <li class="info">
+                        Messages
+                    </li>
+                    <li class="info">
+                        Notification
+                    </li>
+                </nav>
+                <div class="header-img">
+                    <img src="./assets/img/profile-image.png" alt="Profil Photo" class="profile-image">
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="container">
+                <aside class="profile-side">
+                    <div class="profile-contact">
+                        <img src="./assets/img/profile-image.png" alt="Profil Photo" class="side-img">
+                        <h2 class="name">Sophia Clark</h2>
+                        <p class="job">Full Stack Developer</p>
+                        <p class="user-location">Winnipeg, MB</p>
+                        <div class="profile-buttons">
+                            <button class="button follow-btn" aria-label="Follow Sophia Clark">Follow</button>
+                            <button class="button connect-btn" aria-label="Connect with Sophia Clark">Connect</button>
+                        </div>
+                        <div class="profile-status">
+                            <div class="status followers">
+                                <span>10,350k</span>
+                                <span>Followers</span>
+                            </div>
+                            <div class="status connections">
+                                <span>30,400k</span>
+                                <span>Connections</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <section class="post-form">
+                    <form class="add-post">
+                        <textarea placeholder="Start a post" class="post-content" name="postContent"></textarea>
+                        <div class="file-and-button">
+                            <div class="post-options">
+                                <div class="icons-post">
+                                    <div class="article">
+                                        <i class=" article-icon fas fa-file-alt"></i>
+                                        <p>Article</p>
+                                    </div>
+                                    <div class="image">
+                                        <i class=" image-icon fa-regular fa-image"></i>
+                                        <p>Image</p>
+                                    </div>
+                                    <div class="video">
+                                        <i class="video-icon fa-solid fa-video"></i>
+                                        <p>Video</p>
+                                    </div>
+                                    <div>
+                                        <i class="send-icon fa-solid fa-paper-plane"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
             </div>
         </main>
     </body>
