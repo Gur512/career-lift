@@ -7,6 +7,10 @@ Welcome to **Career Lift**, a platform designed to empower your professional jou
 ## 🌐 Live Demo
 Check out the live version of Career Lift [here](https://gur512.github.io/career-lift/).
 
+## To get Access Use:
+Email: preet@gmail.com
+Password: rahaf789
+
 ![login-page](./assets/img/demo.png)
 ---
 
