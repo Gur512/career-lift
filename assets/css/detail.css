@@ -105,8 +105,6 @@ header {
 
 /* profile section */
 .content {
-  display: flex;
-  justify-content: space-around;
   margin: 20px;
   padding: 0 70px; 
 }
@@ -114,7 +112,7 @@ header {
 .profile-side {
   border-radius: 10px;
   text-align: center;
-  padding: 20px 60px;
+  padding: 30px 60px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   height: fit-content;
@@ -374,4 +372,69 @@ footer {
   padding: 0px 30px;
   text-decoration: none;
   color: var(--app-blue-background-color);
+}
+/* Random user section*/
+.random-users {
+  width: 25%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-left: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: fit-content; 
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  justify-content: space-between;
+  margin: 13px 0;
+}
+
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-card .user-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2px;
+  display: grid; 
+  grid-template-columns: auto auto;
+}
+
+.user-card .user-city {
+  font-size: 10px; 
+  color: #555; 
+  position: absolute;
+}
+
+.user-card .add-friend {
+  margin-left: auto;
+  cursor: pointer;
+  color: #0066cc;
+}
+
+.friend-confirmation {
+  position: absolute;
+  left: 110px;
+  bottom: 50px;
+  font-size: 0.85rem;
+  color: #155724;
+  font-weight: bold;
+  background: #d4edda; 
+  padding: 5px 10px;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in */
+  white-space: nowrap;
 }
