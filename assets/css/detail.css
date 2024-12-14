@@ -285,7 +285,6 @@ header {
 
 .first-post, .second-post {
   width: 50%;
-  margin-right: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -356,31 +355,35 @@ header {
 footer {
   background-color: var(--app-white-background-color);
   height: 60px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 30px; 
   p {
-    padding: 0px 30px;
     font-size: 15px;
     font-weight: 400;
   }
 }
 
-.footer-links a {
-  padding: 0px 30px;
-  text-decoration: none;
-  color: var(--app-blue-background-color);
+.footer-links  {
+  a {
+    text-decoration: none;
+    padding: 0px 20px;
+    color: var(--app-blue-background-color);  
+  }
 }
+
 /* Random user section*/
 .random-users {
   width: 25%;
   background-color: #fff;
   padding: 15px;
   border-radius: 8px;
-  margin-left: 10px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   height: fit-content; 
 }
 
@@ -408,7 +411,6 @@ footer {
   font-size: 15px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 2px;
   display: grid; 
   grid-template-columns: auto auto;
 }
@@ -416,7 +418,6 @@ footer {
 .user-card .user-city {
   font-size: 10px; 
   color: #555; 
-  position: absolute;
 }
 
 .user-card .add-friend {
@@ -435,6 +436,6 @@ footer {
   background: #d4edda; 
   padding: 5px 10px;
   border-radius: 8px;
-  animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in */
+  animation: fadeIn 0.3s ease-in-out;
   white-space: nowrap;
 }
