@@ -354,3 +354,24 @@ header {
   align-items: center; 
   padding-top: 10px;
 }
+
+footer {
+  background-color: var(--app-white-background-color);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ccc;
+  p {
+    padding: 0px 30px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+.footer-links a {
+  padding: 0px 30px;
+  text-decoration: none;
+  color: var(--app-blue-background-color);
+}
