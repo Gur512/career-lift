@@ -5,8 +5,9 @@ Welcome to **Career Lift**, a platform designed to empower your professional jou
 ---
 
 ## 🌐 Live Demo
-Check out the live version of Career Lift [here](#https://github.com/Gur512/career-lift.git).
+Check out the live version of Career Lift [here](https://gur512.github.io/career-lift/).
 
+![login-page](./assets/img/demo.png)
 ---
 
 ## 📂 Project Structure
